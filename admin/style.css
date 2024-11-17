@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kodchasan", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+th{
+    text-transform: uppercase;
+}
+body {
+    display: flex;
+    align-items: center;
+    
+}
+.title{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.main-content{
+    margin-left: 15%;
+    width: 85%;
+    background-color:rgb(27, 58, 117);
+    display: grid;
+    place-items: center;
+}
+.title{
+    font-size: larger;
+}
+.container{
+    width: 85vw;
+    height: 100vh;
+    background-color: white;
+}
+.table{
+    width: 80%;
+    margin-left: 5%;
+}
+.button{
+    padding:0.3vw 2vw;
+    background-color:#293540;
+    color:white;
+    border: 1px solid #293540;
+    border-radius:5px;
+    cursor:pointer;
+    transition: 0.3s ease-in;
+    margin: 10px;
+}
+.button:hover{
+    background-color:white;
+    color: #293540;
+    border: 1px solid #293540;
+    border-radius:10px;
+    transition: 0.3s ease-in;
+}
+.input-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.input-data-text,.input-data-file{
+    display: grid;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 90%;
+    margin-top: 5%;
+}
+.input-button{
+    position: absolute;
+    bottom: 5vh;
+}
+.select-data{
+    width: 10vw;
+}
+.input-data{
+    padding:5% 10% ;
+    border: 1px solid #293540;
+    border-radius:10px;
+}
+.input{
+    width: 20vw;
+    height: 10vh;
+    display: block;
+    font-size: 1.2em;
+}
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-btn {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.page-btn:hover {
+    background-color: #ddd;
+}
+.button-group{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}

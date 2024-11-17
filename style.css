@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Kodchasan", sans-serif;
+}
+html {
+  background-color: #f6f6f6;
+
+}
+a {
+  text-decoration: none;
+  color: #191919;
+}
+
+
+.container-fluid{
+  width: 100%;
+  height: 100px;
+  margin-right: 0;
+  margin-left: 0;
+  
+}
+.items-link {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-items {
+  width: 2dvw;
+  height: 2dvw;
+  transition: 0.4s ease-in;
+  margin: 0 3.5dvw;
+  transition: 0.3s ease-in;
+  padding: 2px;
+  color: #36454f;
+}
+.text {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6dvw;
+  height: 2dvw;
+  font-size: 0.8dvw;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+}
+.items-link:hover .text {
+  opacity: 1;
+  scale: 1.1;
+  background-color: #36454f;
+  color: #d3f1f8;
+  transition: 0.3s ease-in;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.product-img {
+  height: 13vw;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.product-box {
+  width: 13vw;
+  background: white;
+  border: 1px solid #36454f;
+  border-radius: 20px;
+  margin: 3vh 0;
+  display: grid;
+  place-items: center;
+  color: #36454f;
+  font-size: 0.85dvw;
+}
+.product-img,
+.tensp,
+.giasp,
+.desc {
+  padding-bottom: 30px;
+}
+.tensp {
+  font-weight: 900;
+}
+.giasp {
+  font-weight: 500;
+}
+.desc {
+  font-weight: bold;
+  padding-left: 5%;
+}
+input[type="submit"] {
+  border: none;
+  background-color: white;
+  width: 100%;
+  height: 5vh;
+}
+.button {
+  width: 100%;
+  height: 5vh;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  color: #36454f;
+  font-size: 0.85dvw;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: #36454f;
+  color: #d3f1f8;
+  font-weight: bold;
+  font-size: large;
+  transition: 0.3s ease-in;
+}
+.see-more {
+  width: 10vw;
+  height: 5vh;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  color: #36454f;
+  font-size: 0.85dvw;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.see-more:hover {
+  background-color: #36454f;
+  color: #d3f1f8;
+  font-weight: bold;
+  font-size: large;
+  transition: 0.3s ease-in;
+}
+.hidden {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.show {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+footer {
+  margin-top: 10vh;
+  background-color: #36454f;
+  border-radius: 20px 20px 0 0;
+  padding: 20px 0;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0 auto;
+}
+
+.footer-item {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-item img {
+  width: 6dvw;
+  height: auto;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.container {
+  display: flex;
+}
+.main {
+  width: 80vw;
+  height: 100vh;
+}
+.sidecart {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  height: 100vh;
+  position: fixed;
+  right: -50vw;
+  opacity: 0;
+  transition: 0.3s ease-in;
+  border-radius: 20px 0 0 20px;
+  display: block;
+  z-index: 999;
+}
+.slide-out {
+  opacity: 1;
+  right: 0;
+  transition: 0.3s ease-in;
+}
+.cart-title-container {
+  display: flex;
+  align-items: center;
+  color: #36454f;
+}
+.cart-product-container {
+  border-bottom: 1px solid #36454f;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 10%;
+  margin: 5% 0;
+  font-size: 1em;
+  color: #36454f;
+}
+.cart-product-img {
+  width: 10%;
+}
+.cart-product-quantity {
+  width: 10%;
+  padding: 5px;
+  border: none;
+}
+.bottom-container{
+  display: grid;
+  width: 100%;
+  height: 10vh;
+}
+.soluong-sp {
+  width: 2vw;
+  padding: 5px;
+  border: none;
+}
+.add-decrease {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 95, 95) !important;
+  color: white;
+  transition: 0.4s ease-in;
+}
+.title {
+  text-decoration: uppercase;
+  color:#36454f;
+}
+.detail-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.title-ct {
+  color: #36454f;
+  margin: 3vh 0;
+}
+.detail-box {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 20px;
+  color: #36454f;
+  transition: 0.3s ease-in;
+}
+.img-box {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail-img {
+  width: 60%;
+  border-radius: 20px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.detail-img:hover {
+  transform: scale(1.15);
+  transition: 0.3s ease-out;
+  -webkit-box-shadow: 0px 9px 24px 11px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 9px 24px 11px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 9px 24px 11px rgba(0, 0, 0, 0.27);
+}
+.text-box {
+  display: grid;
+  place-items: center;
+  height: 80%;
+  width: 60%;
+  background-color: white;
+  transition: 0.3s ease-in;
+}
+.text-box:hover {
+  height: 100%;
+  background-color: #d3f1f8;
+  transition: 0.3s ease-out;
+}
+.cttensp {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.price-box {
+  display: grid;
+}
+.menu-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: 10vh;
+  font-weight: bolder;
+  background-color: white;
+  margin: 2vh 0;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.product-links {
+  color: #36454f;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease-in;
+}
+.product-links:hover {
+  border-bottom: 1px solid #36454f;
+  transition: 0.3s ease-out;
+}
+.product-links:active {
+  border-bottom: 1px solid #36454f;
+  transition: 0.3s ease-out;
+}
+.category-container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+}
+.brand-container {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 50vh;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 20px;
+  margin-top: 2vh;
+}
+.brand-title {
+  font-size: large;
+  text-decoration: uppercase;
+  font-weight: bold;
+}
+.brand-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+.brands-image {
+  width: 15vw;
+  height: 20vh;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.brands-image:hover {
+  scale: 1.2;
+  transition: 0.3s ease-in;
+}
+.bill-product-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 2vh 0;
+}
+.bill-product-img {
+  width: 50px;
+  height: auto;
+}
+.confirm-button {
+  margin-top: 20px;
+}
+.user-info-form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.user-info-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 0.85dvw;
+  border-radius: 5px;
+  border: 1px solid #36454f;
+}
+.bill-container {
+  width: 80vw;
+  border: 1px solid #36454f;
+  border-radius: 20px;
+  background-color: white;
+  margin: 5vh 0;
+}
+.delete-button {
+  background-color: rgb(235, 86, 86);
+  color: white;
+  transition: 0.3s ease-in;
+  padding: 1vh 2vw;
+  border-radius: 20px;
+}
+.delete-button:hover {
+  scale: 1.1;
+}
+.pttt-container {
+  width: 50vw;
+  border-radius: 20px;
+  background-color: white;
+}
+.pttt {
+  margin: 2vw;
+}
+.total-price {
+  background-color: transparent;
+  font-size: 1dvw;
+  border: none;
+  color: #36454f;
+}
+.bilct-container{
+  width: 100vw;
+  display: grid;
+}
+.info-ct{
+  margin: 5vh 0;
+  display: flex;
+  justify-content: space-around;
+}
+.info-bill-box,.info-user-box{
+  justify-content: space-evenly;
+  background-color:rgba(226, 216, 216, 0.664);
+  width: 100%;
+  border-radius:20px;
+}
+.info-bill,.info-user{
+  padding:10px;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  color:#36454f;
+}
+.bill-ct{
+  width: 70%;
+  height: 50vh;
+  border-radius:20px;
+  background-color:rgba(226, 216, 216, 0.664);
+}
+.mybill-box{
+  display: grid;
+  place-items: center;
+  background-color:rgba(226, 216, 216, 0.664);
+  border-radius: 15px;
+  width: 80vw;
+}
+.bill-table{
+  width: 80vw;
+  font-size: 0.8dvw;
+  margin-top: 20vh;
+  border-radius:20px;
+  border:1px solid #36454f;
+  padding: 5vh 10vw;
+}
+.mybill-container{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
